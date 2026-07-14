@@ -80,7 +80,8 @@ https://drive.google.com/uc?export=download&id=1AZrdsb7CI27t1ArczS1wP2CDYLUR1b2w
 - `index.html`：頁面內容、下載連結與基本社群分享資訊
 - `styles.css`：黑金主題、手機優先響應式版面與無障礙樣式
 - `script.js`：FAQ 單一展開行為與頁尾年份
-- `assets/driverhelper-promo.jpg`：首頁品牌主視覺與社群分享預覽圖
+- `assets/app-icon.png`：首頁使用的 DriverHelper App 圖示
+- `assets/driverhelper-promo.jpg`：功能全覽與社群分享預覽圖
 - `assets/site-qr.png`：指向正式 GitHub Pages 網址的 QR Code
 - `.nojekyll`：讓 GitHub Pages 直接提供靜態檔案
 - `.github/workflows/deploy-pages.yml`：位於 repository 根目錄的自動部署 workflow
