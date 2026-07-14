@@ -106,11 +106,10 @@ a {
 .hero {
   position: relative;
   display: flex;
-  min-height: 760px;
-  min-height: 100svh;
+  min-height: 0;
   flex-direction: column;
   justify-content: center;
-  padding: 120px 24px 90px;
+  padding: 112px 20px 62px;
   overflow: hidden;
   background:
     radial-gradient(circle at 76% 17%, rgba(224, 184, 91, 0.12), transparent 30%),
@@ -137,10 +136,12 @@ a {
   box-shadow: 0 0 100px rgba(224, 184, 91, 0.08), inset 0 0 80px rgba(224, 184, 91, 0.04);
 }
 
-.hero > :not(.hero-glow, .road-line) {
+.hero-inner {
   position: relative;
   z-index: 1;
+  display: grid;
   width: min(100%, var(--max-width));
+  gap: 38px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -169,7 +170,7 @@ a {
 
 .hero h1 {
   margin: 2px auto 0;
-  font-size: clamp(58px, 18vw, 118px);
+  font-size: clamp(52px, 15vw, 88px);
   font-weight: 800;
   letter-spacing: -0.08em;
   line-height: 1.02;
@@ -186,7 +187,7 @@ a {
 }
 
 .hero-slogan {
-  margin-top: 54px !important;
+  margin-top: 34px !important;
   margin-bottom: 0 !important;
   font-size: clamp(30px, 8.5vw, 58px);
   font-weight: 650;
@@ -200,11 +201,86 @@ a {
   font-size: clamp(18px, 4.7vw, 24px);
 }
 
+.hero-purpose {
+  max-width: 610px;
+  margin: 18px 0 0;
+  color: #d2cec5;
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+.hero-feature-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 20px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.hero-feature-list li {
+  position: relative;
+  padding: 6px 11px 6px 25px;
+  border: 1px solid rgba(224, 184, 91, 0.2);
+  border-radius: 999px;
+  background: rgba(224, 184, 91, 0.05);
+  color: #e4ded2;
+  font-size: 13px;
+}
+
+.hero-feature-list li::before {
+  position: absolute;
+  top: 7px;
+  left: 10px;
+  color: var(--gold);
+  content: "✓";
+}
+
 .hero-status {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
   margin-top: 32px !important;
+}
+
+.hero-preview {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 6px;
+  overflow: hidden;
+  border: 1px solid rgba(224, 184, 91, 0.38);
+  border-radius: 22px;
+  background: #090908;
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.5), 0 0 44px rgba(224, 184, 91, 0.06);
+}
+
+.hero-preview img {
+  display: block;
+  width: 100%;
+  height: clamp(280px, 92vw, 420px);
+  border-radius: 15px 15px 8px 8px;
+  object-fit: cover;
+  object-position: top center;
+}
+
+.hero-preview figcaption {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  padding: 14px 12px 10px;
+}
+
+.hero-preview figcaption strong {
+  color: var(--gold-bright);
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.hero-preview figcaption span {
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.6;
 }
 
 .hero-status span {
@@ -268,7 +344,7 @@ a {
 
 .brand-visual {
   margin-top: -32px;
-  padding-top: 74px;
+  padding-top: 68px;
   border-radius: 32px 32px 0 0;
   background: var(--black);
 }
@@ -823,6 +899,10 @@ footer p {
     padding-left: 40px;
   }
 
+  .hero-preview img {
+    height: 500px;
+  }
+
   .download-card {
     grid-template-columns: 56px 1fr minmax(270px, 340px);
     align-items: center;
@@ -874,8 +954,20 @@ footer p {
     margin: 0 auto;
   }
 
-  .hero-slogan br {
-    display: none;
+  .hero {
+    min-height: 720px;
+    padding-top: 128px;
+    padding-bottom: 76px;
+  }
+
+  .hero-inner {
+    grid-template-columns: minmax(0, 1.05fr) minmax(360px, 0.75fr);
+    gap: clamp(42px, 6vw, 82px);
+    align-items: center;
+  }
+
+  .hero-preview img {
+    height: 520px;
   }
 
   .feature-grid {
