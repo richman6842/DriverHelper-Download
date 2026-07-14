@@ -35,7 +35,7 @@ https://<GitHub 使用者名稱>.github.io/<repository 名稱>/
 
 ## 產生正式網站 QR Code
 
-頁面目前刻意只顯示 QR Code 預留區，沒有放置假 QR Code，也沒有讓 QR Code 指向 APK。部署完成並確認正式網站網址可開啟後：
+頁面中的 QR Code 已指向正式網站 `https://richman6842.github.io/DriverHelper-Download/`，沒有直接指向 APK。若網站網址未來變更，可依下列方式重新產生：
 
 1. 複製 GitHub Pages 的正式網址，例如 `https://richman6842.github.io/DriverHelper-Download/`。
 2. 使用可信任的 QR Code 產生工具，內容只填入這個網站網址。
@@ -47,7 +47,7 @@ https://<GitHub 使用者名稱>.github.io/<repository 名稱>/
    <img class="site-qr" src="assets/site-qr.png" alt="掃描前往 DriverHelper 官方下載網站">
    ```
 
-6. 將「部署完成後產生網站 QR Code」改成「掃描前往 DriverHelper 官方下載網站」。
+6. 確認頁面顯示「掃描前往 DriverHelper 官方下載網站」。
 
 QR Code 必須永遠指向網站網址，不要指向 Google Drive。如此未來更換 APK，只需修改網站，不必重印 QR Code。
 
@@ -81,5 +81,6 @@ https://drive.google.com/uc?export=download&id=1AZrdsb7CI27t1ArczS1wP2CDYLUR1b2w
 - `styles.css`：黑金主題、手機優先響應式版面與無障礙樣式
 - `script.js`：FAQ 單一展開行為與頁尾年份
 - `assets/driverhelper-promo.jpg`：首頁品牌主視覺與社群分享預覽圖
+- `assets/site-qr.png`：指向正式 GitHub Pages 網址的 QR Code
 - `.nojekyll`：讓 GitHub Pages 直接提供靜態檔案
 - `.github/workflows/deploy-pages.yml`：位於 repository 根目錄的自動部署 workflow
