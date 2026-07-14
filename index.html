@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>運轉人生 DriverHelper｜Android 測試版下載</title>
-    <meta name="description" content="運轉人生 DriverHelper 是專為台灣計程車司機打造的智慧營運助手。下載 Android 測試版 APK，查看功能介紹與完整安裝步驟。">
+    <meta name="description" content="運轉人生 DriverHelper 是專為台灣計程車司機打造的智慧營運助手。下載 Android 測試版 APK，查看完整安裝步驟、每日載客流程與 App 使用說明。">
     <meta name="theme-color" content="#090909">
     <meta property="og:title" content="運轉人生 DriverHelper｜Android 測試版下載">
     <meta property="og:description" content="每一趟車，都留下完整數據。下一趟，更容易做出好決策。">
@@ -202,8 +202,177 @@
         </div>
       </section>
 
-      <section class="safety section-shell" aria-labelledby="safety-title">
+      <section class="user-manual section-shell" id="manual" aria-labelledby="manual-title">
         <div class="section-number" aria-hidden="true">04</div>
+        <div class="section-heading">
+          <p class="kicker">上車、載客、結算一次看懂</p>
+          <h2 id="manual-title">DriverHelper 使用說明書</h2>
+          <p class="manual-lead">從出門上線到下線收工，照著以下順序操作，App 會自動整理每一趟的時間、里程、地點、車資與營運成果。</p>
+        </div>
+
+        <h3 class="manual-subtitle">每日基本操作流程</h3>
+        <ol class="drive-flow">
+          <li>
+            <span class="flow-number">1</span>
+            <div class="flow-copy">
+              <span class="flow-label">準備出車</span>
+              <h4>點擊「上線開工」</h4>
+              <p>開啟 App 的「紀錄」頁，在上車準備營業時點擊「上線開工」。系統開始計算工作時間與出車里程，畫面上會出現紅色「空車中」懸浮鈕。</p>
+            </div>
+          </li>
+          <li>
+            <span class="flow-number">2</span>
+            <div class="flow-copy">
+              <span class="flow-label">客人上車</span>
+              <h4>點一下紅色懸浮鈕</h4>
+              <p>確認乘客已上車後，點一下「空車中」懸浮鈕開始計費。系統會記下上車時間與地點，並依 GPS 所在縣市及日夜時段套用費率。</p>
+            </div>
+          </li>
+          <li>
+            <span class="flow-number">3</span>
+            <div class="flow-copy">
+              <span class="flow-label">載客途中</span>
+              <h4>查看綠色計費懸浮鈕</h4>
+              <p>懸浮鈕轉為綠色後，會顯示目前車資、載客里程、eTag 與載客率。可拖曳到不遮擋導航的位置；行車中請勿進行複雜操作。</p>
+            </div>
+          </li>
+          <li>
+            <span class="flow-number">4</span>
+            <div class="flow-copy">
+              <span class="flow-label">客人下車</span>
+              <h4>再點一下懸浮鈕結束計費</h4>
+              <p>抵達後點一下綠色懸浮鈕，系統會記下下車時間與地點，並開啟本趟結算畫面。</p>
+            </div>
+          </li>
+          <li>
+            <span class="flow-number">5</span>
+            <div class="flow-copy">
+              <span class="flow-label">完成記帳</span>
+              <h4>核對資料並「確認送出」</h4>
+              <p>確認實收、小費、eTag、客源、付款方式及抽成；需要時可切換大車倍率。送出後本趟資料與淨利會存入「紀錄」，懸浮鈕回到空車狀態。</p>
+            </div>
+          </li>
+          <li>
+            <span class="flow-number">6</span>
+            <div class="flow-copy">
+              <span class="flow-label">結束營業</span>
+              <h4>返回 App 點擊「下線收工」</h4>
+              <p>當天不再載客時，長按空車懸浮鈕可回到 App，再於「紀錄」頁點擊「下線收工」。系統停止追蹤並顯示當日營運結算。</p>
+            </div>
+          </li>
+        </ol>
+
+        <div class="manual-notice">
+          <span aria-hidden="true">!</span>
+          <p><strong>行車安全優先</strong>請在車輛安全停妥時操作結算、修改資料或查看分析。懸浮鈕可以拖曳移動；空車狀態下長按懸浮鈕可返回 DriverHelper。</p>
+        </div>
+
+        <div class="manual-functions">
+          <div class="manual-functions-heading">
+            <p class="kicker">完整功能導覽</p>
+            <h3>App 內各分頁怎麼使用</h3>
+            <p>點擊標題即可展開說明。</p>
+          </div>
+
+          <div class="manual-accordion">
+            <details open>
+              <summary><span class="manual-icon" aria-hidden="true">01</span><span><strong>第一次使用與必要設定</strong><small>定位、懸浮顯示、營運成本</small></span><i aria-hidden="true"></i></summary>
+              <div class="manual-detail-body">
+                <ul>
+                  <li>依手機提示允許精確位置、通知及「顯示在其他 App 上層」權限，才能記錄地點並顯示懸浮鈕。</li>
+                  <li>先到「設定」填寫常用抽成、油耗、油價、輪胎、保養與固定成本，淨利分析才會更接近實際狀況。</li>
+                  <li>設定每日淨利目標與營業換日時間；確認完成後點擊「儲存所有設定」。</li>
+                </ul>
+              </div>
+            </details>
+
+            <details>
+              <summary><span class="manual-icon" aria-hidden="true">02</span><span><strong>紀錄</strong><small>上下線、營業總結、行程明細與報表</small></span><i aria-hidden="true"></i></summary>
+              <div class="manual-detail-body">
+                <ul>
+                  <li>使用「上線開工／下線收工」控制每天的營業時段。</li>
+                  <li>切換今日、不同期間或自訂日期，查看營收、趟次、里程、工時、載客率、時薪、成本及實際淨利。</li>
+                  <li>每趟明細包含起訖地點、載客時間、均速、車資、小費、付款方式、成本與淨利。</li>
+                  <li>點擊明細查看內容，長按可全面編輯或刪除；里程與工時旁的鉛筆可手動校正。</li>
+                  <li>「匯出明細」與「每日分析」可將營運資料輸出成報表。</li>
+                </ul>
+              </div>
+            </details>
+
+            <details>
+              <summary><span class="manual-icon" aria-hidden="true">03</span><span><strong>懸浮鈕與行程結算</strong><small>自動跳錶、GPS 費率、eTag 與淨利</small></span><i aria-hidden="true"></i></summary>
+              <div class="manual-detail-body">
+                <ul>
+                  <li><strong>紅色「空車中」：</strong>點一下開始載客；長按返回 App；拖曳可調整位置。</li>
+                  <li><strong>綠色計費中：</strong>顯示 GPS 判斷的縣市日／夜費率、目前車資、里程及 eTag；點一下結束本趟。</li>
+                  <li><strong>結算畫面：</strong>可調整實收與小費、確認 eTag、選擇平台／高鐵／路招／熟客／其他客源，以及現金／非現金／混合付款。</li>
+                  <li>可選擇固定金額或百分比抽成，並依需要啟用大車倍率；確認送出後自動計算變動成本、手續費及本趟淨利。</li>
+                </ul>
+              </div>
+            </details>
+
+            <details>
+              <summary><span class="manual-icon" aria-hidden="true">04</span><span><strong>互助</strong><small>車趟支援與司機揪團</small></span><i aria-hidden="true"></i></summary>
+              <div class="manual-detail-body">
+                <ul>
+                  <li>查看其他司機發布的即時需求，或發布單趟、來回與包車支援。</li>
+                  <li>可填寫時間、地點、起訖點、車種、計費方式、付款方式與需求人數。</li>
+                  <li>也能發布麻將、聚餐、宵夜、釣蝦、出遊等司機交流揪團；緊急需求可標示為立即支援。</li>
+                </ul>
+              </div>
+            </details>
+
+            <details>
+              <summary><span class="manual-icon" aria-hidden="true">05</span><span><strong>分析</strong><small>營運洞察、桃機、估價、社群與成就</small></span><i aria-hidden="true"></i></summary>
+              <div class="manual-detail-body">
+                <ul>
+                  <li><strong>分析：</strong>查看戰力評分、平均時薪、載客率、淨利率、均速、小費、客源與金流結構，並可生成今日戰報圖分享。</li>
+                  <li><strong>桃機：</strong>輸入與車上張貼之相同完整編號後，查看桃機支援出車機率、航班入境需求、T1／T2 預估車數、天氣與交通資訊，作為是否前往支援的參考。</li>
+                  <li><strong>估價：</strong>輸入起點與終點，或使用目前位置，依實際路徑及當地費率試算車資；亦可套用大車倍率。</li>
+                  <li><strong>社群：</strong>查看司機效率排行與上線狀態；資料會定時更新。</li>
+                  <li><strong>成就：</strong>累積各地區載客足跡，查看區域進度並解鎖達人成就。</li>
+                </ul>
+              </div>
+            </details>
+
+            <details>
+              <summary><span class="manual-icon" aria-hidden="true">06</span><span><strong>加油</strong><small>油價、油耗與燃料成本</small></span><i aria-hidden="true"></i></summary>
+              <div class="manual-detail-body">
+                <ul>
+                  <li>選擇油品，輸入目前儀表里程、加油公升數及每公升單價，再點擊「儲存並自動分析」。</li>
+                  <li>建議每次跳停加滿；累積兩次以上紀錄後，系統會用滿到滿方式校正平均油耗。</li>
+                  <li>可查看近期加油紀錄與累積平均油耗；長按單筆紀錄可刪除。</li>
+                </ul>
+              </div>
+            </details>
+
+            <details>
+              <summary><span class="manual-icon" aria-hidden="true">07</span><span><strong>支出</strong><small>額外成本與本月明細</small></span><i aria-hidden="true"></i></summary>
+              <div class="manual-detail-body">
+                <ul>
+                  <li>記錄罰單、車輛美容、意外維修、保養零件或其他雜支，可加上備註。</li>
+                  <li>支出會納入實際淨利計算；本月明細可逐筆查看，長按即可刪除。</li>
+                </ul>
+              </div>
+            </details>
+
+            <details>
+              <summary><span class="manual-icon" aria-hidden="true">08</span><span><strong>設定與雲端資料</strong><small>個人資料、成本參數與還原</small></span><i aria-hidden="true"></i></summary>
+              <div class="manual-detail-body">
+                <ul>
+                  <li>管理個人 ID、頭像、每日目標、平台抽成、營業換日時間及大車倍率。</li>
+                  <li>設定車貸／租金、靠行／車隊、保險、停車、油耗、油價、輪胎與保養費，系統會換算固定及變動成本。</li>
+                  <li>換手機或重裝 App 時，可使用雲端資料同步還原歷史載客、加油與支出紀錄；重要資料仍建議定期備份。</li>
+                  <li>「查看操作指南」可再次播放 App 內建功能導覽。</li>
+                </ul>
+              </div>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <section class="safety section-shell" aria-labelledby="safety-title">
+        <div class="section-number" aria-hidden="true">05</div>
         <div class="section-heading">
           <p class="kicker">下載前請先閱讀</p>
           <h2 id="safety-title">安全與版本說明</h2>
@@ -223,7 +392,7 @@
       </section>
 
       <section class="faq section-shell" aria-labelledby="faq-title">
-        <div class="section-number" aria-hidden="true">05</div>
+        <div class="section-number" aria-hidden="true">06</div>
         <div class="section-heading">
           <p class="kicker">常見安裝問題</p>
           <h2 id="faq-title">常見問題</h2>

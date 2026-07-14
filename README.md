@@ -77,7 +77,7 @@ https://drive.google.com/uc?export=download&id=1AZrdsb7CI27t1ArczS1wP2CDYLUR1b2w
 
 ## 檔案說明
 
-- `index.html`：頁面內容、下載連結與基本社群分享資訊
+- `index.html`：頁面內容、下載連結、安裝教學、完整使用說明與基本社群分享資訊
 - `styles.css`：黑金主題、手機優先響應式版面與無障礙樣式
 - `script.js`：FAQ 單一展開行為與頁尾年份
 - `assets/app-icon.png`：首頁使用的 DriverHelper App 圖示

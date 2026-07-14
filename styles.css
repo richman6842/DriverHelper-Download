@@ -667,6 +667,249 @@ summary:focus-visible,
   font-size: 16px;
 }
 
+.user-manual {
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+  background:
+    radial-gradient(circle at 90% 12%, rgba(224,184,91,0.09), transparent 28%),
+    var(--black);
+}
+
+.manual-lead {
+  max-width: 760px;
+  margin: 18px 0 0;
+  color: #c9c4ba;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.manual-subtitle {
+  margin: 0 0 20px;
+  color: var(--gold-bright);
+  font-size: 22px;
+}
+
+.drive-flow {
+  display: grid;
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.drive-flow li {
+  position: relative;
+  min-width: 0;
+  padding: 24px 20px 22px 72px;
+  border: 1px solid rgba(255,255,255,0.09);
+  border-radius: 18px;
+  background: linear-gradient(145deg, #171612, #0e0e0d);
+}
+
+.flow-number {
+  position: absolute;
+  top: 22px;
+  left: 18px;
+  display: grid;
+  width: 38px;
+  height: 38px;
+  place-items: center;
+  border: 1px solid var(--gold-deep);
+  border-radius: 50%;
+  color: var(--gold-bright);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 18px;
+}
+
+.flow-label {
+  display: block;
+  margin-bottom: 3px;
+  color: var(--gold);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+}
+
+.flow-copy h4 {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.45;
+}
+
+.flow-copy p {
+  margin: 8px 0 0;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.75;
+}
+
+.manual-notice {
+  display: grid;
+  grid-template-columns: 38px 1fr;
+  gap: 14px;
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid rgba(244,211,127,0.34);
+  border-radius: 16px;
+  background: rgba(224,184,91,0.065);
+}
+
+.manual-notice > span {
+  display: grid;
+  width: 34px;
+  height: 34px;
+  place-items: center;
+  border: 1px solid var(--gold);
+  border-radius: 50%;
+  color: var(--gold-bright);
+  font-family: Georgia, serif;
+  font-weight: 800;
+}
+
+.manual-notice p {
+  margin: 0;
+  color: #d2cdc3;
+  font-size: 14px;
+  line-height: 1.75;
+}
+
+.manual-notice strong {
+  display: block;
+  color: var(--text);
+  font-size: 16px;
+}
+
+.manual-functions {
+  margin-top: 64px;
+}
+
+.manual-functions-heading {
+  margin-bottom: 22px;
+}
+
+.manual-functions-heading h3 {
+  margin: 0;
+  font-size: clamp(27px, 7vw, 38px);
+  line-height: 1.25;
+}
+
+.manual-functions-heading > p:last-child {
+  margin: 8px 0 0;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.manual-accordion {
+  display: grid;
+  gap: 10px;
+}
+
+.manual-accordion details {
+  overflow: hidden;
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 16px;
+  background: #11110f;
+}
+
+.manual-accordion details[open] {
+  border-color: rgba(224,184,91,0.34);
+  background: linear-gradient(145deg, rgba(224,184,91,0.07), #11110f 52%);
+}
+
+.manual-accordion summary {
+  display: grid;
+  grid-template-columns: 44px minmax(0, 1fr) 22px;
+  gap: 12px;
+  align-items: center;
+  min-height: 76px;
+  padding: 14px 16px;
+  cursor: pointer;
+  list-style: none;
+}
+
+.manual-accordion summary::-webkit-details-marker {
+  display: none;
+}
+
+.manual-icon {
+  display: grid;
+  width: 42px;
+  height: 42px;
+  place-items: center;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  color: var(--gold-bright);
+  font-family: Georgia, serif;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.manual-accordion summary strong,
+.manual-accordion summary small {
+  display: block;
+}
+
+.manual-accordion summary strong {
+  font-size: 17px;
+  line-height: 1.45;
+}
+
+.manual-accordion summary small {
+  margin-top: 3px;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.manual-accordion summary i {
+  position: relative;
+  width: 20px;
+  height: 20px;
+}
+
+.manual-accordion summary i::before,
+.manual-accordion summary i::after {
+  position: absolute;
+  top: 9px;
+  left: 2px;
+  width: 16px;
+  height: 1px;
+  background: var(--gold);
+  content: "";
+  transition: transform 180ms ease;
+}
+
+.manual-accordion summary i::after {
+  transform: rotate(90deg);
+}
+
+.manual-accordion details[open] summary i::after {
+  transform: rotate(0);
+}
+
+.manual-detail-body {
+  padding: 0 18px 20px 70px;
+}
+
+.manual-detail-body ul {
+  margin: 0;
+  padding-left: 18px;
+  color: #bdb8ae;
+}
+
+.manual-detail-body li {
+  padding: 5px 0;
+  font-size: 14px;
+  line-height: 1.75;
+}
+
+.manual-detail-body li::marker {
+  color: var(--gold);
+}
+
+.manual-detail-body strong {
+  color: #e7dfcf;
+}
+
 .safety-panel {
   padding: 24px 20px;
   border: 1px solid var(--line);
@@ -957,6 +1200,10 @@ footer p {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .drive-flow {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .feature-card-wide {
     display: grid;
     grid-column: 1 / -1;
@@ -1010,6 +1257,10 @@ footer p {
   }
 
   .feature-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .drive-flow {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
